@@ -1,0 +1,13 @@
+function alturaArvoreUtopica(ciclos){
+      var alt = 1;
+    for(var i=1; i<=ciclos; i++){
+if(i%2 == 0){
+    alt++
+}else if(i%2 != 0){
+    alt = alt*2;
+    }else if(ciclos == 0){
+        alt = 1;
+    }
+    }
+    return alt
+}
