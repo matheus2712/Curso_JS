@@ -1,0 +1,10 @@
+function escada(altura){
+    
+    var res = [];
+    var al = altura-1;
+    for(var i=1; i<=altura; i++){
+var esp = (" ".repeat(al--))
+res.push(esp+"#".repeat(i));
+    }
+    return res;
+}
