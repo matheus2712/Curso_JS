@@ -1,0 +1,7 @@
+function produto(num){
+    var cont = 1;
+    for(var i=0; i<num.length; i++){
+cont = cont*num[i];
+    }
+    return cont;
+}
