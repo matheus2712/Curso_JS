@@ -1,0 +1,24 @@
+function maisMenos(num){
+    var qtde = num.length;
+    var zeros = 0;
+    var negativos = 0;
+    var positivos = 0;
+    var res = [];
+    for(var i=0; i<num.length; i++){
+        if (num[i] > 0){
+            positivos++;
+            
+            }else if(num[i] == 0){
+                zeros++;
+                
+            }else if(num[i]<0){
+                negativos++;
+            
+            }
+    }
+    positivos = positivos/qtde;
+    zeros = zeros/qtde;
+    negativos = negativos/qtde;
+       res.push(positivos, zeros, negativos);
+return res;
+}
